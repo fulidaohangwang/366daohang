@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>绿色360导航最新地址</title>
+<meta name="keywords" content="">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+</head>
+<body>
 <div style="text-align:center;">
   <h3>【绿色360导航】最新可访问地址</h3>
   <p>
@@ -6,12 +15,26 @@
   <br/>
   <br/>
   <p>
-    1，获取【绿色360导航】最新地址方法：请牢记拼音：<span style="color:#ff0000;">fulidaohangwang.github.io/360daohang/</span>   <br/>   即由   福利导航网- fulidaohangwang 和github项目托管域名- github.io 和导航简称- 360daohang   共3部分组合生成!
+    1，获取【绿色360导航】最新地址方法：请牢记拼音：<span style="color:#ff0000;">fulidaohangwang.github.io/360daohang/</span>   <br/>   即由   福利导航网- fulidaohangwang 和 github项目托管域名- github.io 和导航简称- 360daohang   共3部分组合生成!
    </p>  
    <p>
     2.收藏本网页,获取最新可访问地址。
   </p>
+    <br/>
+  <br/>
+  <p>页面<span id="timer">10</span>秒后将自动跳转进入...</p>
 </div>
 <script>
-    alert('1111');
+    function timer_jump(timer){
+      document.getElementById('timer').text = timer;
+      if(timer>1){
+          timer--;
+          setTimeout("timer_jump("+timer+")",1000);
+      }else{
+          window.location.href='http://www.sewang01.xyz';
+      }
+    }
+  timer_jump();
 </script>
+</body>
+</html>
