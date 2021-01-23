@@ -22,19 +22,22 @@
   </p>
     <br/>
   <br/>
-  <p>页面<span id="timer" style="color:#f00;font-size:20px;">10</span>秒后将自动选择可用网址跳转进入...</p>
+  <p>页面<span id="timer" style="color:#f00;font-size:20px;">6</span>秒后将自动选择可用网址跳转进入...</p>
 </div>
 <script>
-    function timer_jump(timer){
+   var urls = new Array();
+   urls[0]="http://www.sewang01.xyz";
+   n = Math.floor(Math.random() * urls.length);
+   function timer_jump(timer){
       document.getElementById('timer').innerText = timer;
       if(timer>1){
           timer--;
           setTimeout("timer_jump("+timer+")",1000);
       }else{
-          window.location.href='http://www.sewang01.xyz';
+          window.location.href= url[n];
       }
     }
-  timer_jump(10);
+  timer_jump(6);
 </script>
 </body>
 </html>
