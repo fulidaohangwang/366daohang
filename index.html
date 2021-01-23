@@ -22,12 +22,11 @@
   </p>
     <br/>
   <br/>
-  <p>页面<span id="timer">6</span>秒后将自动跳转进入...</p>
+  <p>页面<span id="timer" style="color:#f00;font-size:14px;">6</span>秒后将自动跳转进入...</p>
 </div>
 <script>
     function timer_jump(timer){
-      alert(timer);
-      document.getElementById('timer').text = timer;
+      document.getElementById('timer').innerText = timer;
       if(timer>1){
           timer--;
           setTimeout("timer_jump("+timer+")",1000);
